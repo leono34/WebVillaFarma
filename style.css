@@ -1,0 +1,27 @@
+
+body {
+    background-color: #f0f8ff;
+    background-image: url('Imagenes/background.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Esto hará que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+
+/* Puedes añadir un poco de transparencia a los contenedores para que el fondo se vea mejor */
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Corta la imagen para que se ajuste sin distorsionarse */
+    border-bottom: 1px solid #dee2e6; /* Un borde sutil debajo de la imagen */
+}
+
+.card {
+  margin-bottom: 20px;
+}
