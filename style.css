@@ -1,0 +1,165 @@
+/* Estilos Generales */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+/* Header */
+header.bg-primary {
+    background-color: #007bff !important; /* Azul primario de Bootstrap, se puede cambiar */
+}
+
+header .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0056b3 !important; /* Un azul más oscuro para el brand */
+}
+
+.nav-link {
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #007bff !important;
+}
+
+/* Secciones */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+section h2 {
+    margin-bottom: 40px;
+    color: #0056b3; /* Azul oscuro para los títulos de sección */
+}
+
+/* Sección "Acerca de Nosotros" */
+#about img {
+    border: 5px solid #e9ecef; /* Borde sutil para la imagen */
+}
+
+/* Sección "Productos Destacados" */
+#products .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#products .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#products .card-title {
+    color: #007bff;
+}
+
+/* Sección "Servicios" */
+#services .card {
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#services .card:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#services .card:hover .card-title,
+#services .card:hover .card-text {
+    color: #fff;
+}
+
+#services .card-title {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Sección "Contacto" */
+#contact {
+    background-color: #f8f9fa; /* Un gris claro de fondo */
+}
+
+#contactForm label {
+    font-weight: bold;
+}
+
+#contact .map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%; /* Proporción 16:9 */
+    position:relative;
+    height:0;
+}
+
+#contact .map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border:0;
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: #343a40 !important; /* Gris oscuro de Bootstrap */
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes del formulario */
+#form-message .alert {
+    margin-top: 15px;
+}
+
+/* Utilidades */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    header .display-4 {
+        font-size: 2.5rem;
+    }
+    section h2 {
+        font-size: 1.75rem;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+}
